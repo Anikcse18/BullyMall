@@ -71,12 +71,12 @@ const Header = () => {
           onClick={() => setOpen(!open)}
         >
           {open ? (
-            <button className="p-3  bg-gray-200 hover:bg-gray-1000  shadow-lg rounded-lg">
-              <GiHamburgerMenu></GiHamburgerMenu>
-            </button>
-          ) : (
             <button className="p-3 bg-gray-200 hover:bg-gray-1000 shadow-lg rounded-lg">
               <RxCross2></RxCross2>
+            </button>
+          ) : (
+            <button className="p-3  bg-gray-200 hover:bg-gray-1000  shadow-lg rounded-lg">
+              <GiHamburgerMenu></GiHamburgerMenu>
             </button>
           )}
         </div>
