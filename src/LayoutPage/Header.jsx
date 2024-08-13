@@ -12,31 +12,53 @@ const Header = () => {
   return (
     <div className=" p-7 bg-[#E5734F]">
       <div className="container flex justify-between items-center">
-        <div>
+        <div className="order: 3">
           <img src={Logo} alt="" className="w-28" />
         </div>
 
-        <div className="hidden lg:block">
-          <ul className="font-bold flex gap-7 items-center">
-            <li>
+        <div className="order-last lg:order-none">
+          {/* Toggle menu */}
+          <div
+            className="text-2xl block lg:hidden relative "
+            onClick={() => setOpen(!open)}
+          >
+            {open ? (
+              <button className="p-3 bg-gray-200 hover:bg-gray-1000 shadow-lg rounded-lg">
+                <RxCross2></RxCross2>
+              </button>
+            ) : (
+              <button className="p-3  bg-gray-200 hover:bg-gray-1000  shadow-lg rounded-lg">
+                <GiHamburgerMenu></GiHamburgerMenu>
+              </button>
+            )}
+          </div>
+
+          <ul
+            className={`font-bold lg:flex gap-7 duration-700 delay-10000 items-center ${
+              open
+                ? "flex-col block absolute right-10 top-24 transition-all bg-opacity-30 rounded-lg bg-blue-400 p-4"
+                : "hidden"
+            }`}
+          >
+            <li className="hover:bg-gray-300 duration-700 rounded-lg px-7 py-2">
               <a href="#">Home</a>
             </li>
-            <li>
+            <li className="hover:bg-gray-300 duration-700 rounded-lg px-7 lg:px-3 py-2 ">
               <a href="#" className="flex items-center gap-1">
                 Pets
                 <MdKeyboardArrowDown></MdKeyboardArrowDown>
               </a>
             </li>
-            <li>
+            <li className="hover:bg-gray-300 duration-700 rounded-lg px-7 lg:px-3 py-2">
               <a href="#" className="flex items-center gap-1">
                 Services
                 <MdKeyboardArrowDown></MdKeyboardArrowDown>
               </a>
             </li>
-            <li>
+            <li className="hover:bg-gray-300 duration-700 rounded-lg px-7 lg:px-3 py-2">
               <a href="#">Product</a>
             </li>
-            <li>
+            <li className="mt-2 lg:mt-0">
               <button className="btn btn-outline text-[#0702AA] rounded-lg hover:bg-[#0702AA] bg-white border-[#0702AA] ">
                 Become A Seller
               </button>
@@ -44,7 +66,7 @@ const Header = () => {
           </ul>
         </div>
 
-        <div>
+        <div className="">
           <ul className="flex items-center gap-4">
             <li className="hidden md:block">
               <MdShoppingCart className="text-white text-xl"></MdShoppingCart>
@@ -64,21 +86,6 @@ const Header = () => {
               </button>
             </li>
           </ul>
-        </div>
-        {/* Toggle menu */}
-        <div
-          className="text-2xl block lg:hidden "
-          onClick={() => setOpen(!open)}
-        >
-          {open ? (
-            <button className="p-3 bg-gray-200 hover:bg-gray-1000 shadow-lg rounded-lg">
-              <RxCross2></RxCross2>
-            </button>
-          ) : (
-            <button className="p-3  bg-gray-200 hover:bg-gray-1000  shadow-lg rounded-lg">
-              <GiHamburgerMenu></GiHamburgerMenu>
-            </button>
-          )}
         </div>
       </div>
     </div>
