@@ -42,7 +42,7 @@ const Header = () => {
 
         <div>
           <ul className="flex items-center gap-4">
-            <li>
+            <li className="hidden md:block">
               <MdShoppingCart className="text-white text-xl"></MdShoppingCart>
             </li>
 
