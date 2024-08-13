@@ -34,9 +34,9 @@ const Header = () => {
           </div>
 
           <ul
-            className={`font-bold lg:flex gap-7 duration-700 delay-10000 items-center ${
+            className={`font-bold  lg:flex gap-7 duration-700 delay-10000 items-center ${
               open
-                ? "flex-col block absolute right-10 top-24 transition-all bg-opacity-30 rounded-lg bg-blue-400 p-4"
+                ? "flex-col absolute right-2 top-24 transition-all bg-opacity-30 rounded-lg bg-blue-400 p-4"
                 : "hidden"
             }`}
           >
@@ -59,7 +59,7 @@ const Header = () => {
               <a href="#">Product</a>
             </li>
             <li className="mt-2 lg:mt-0">
-              <button className="btn btn-outline text-[#0702AA] rounded-lg hover:bg-[#0702AA] bg-white border-[#0702AA] ">
+              <button className="btn btn-outline text-[#0702AA] rounded-lg hover:bg-[#0702AA] hover:text-white border-[#0702AA] ">
                 Become A Seller
               </button>
             </li>
