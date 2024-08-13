@@ -3,8 +3,12 @@ import { MdKeyboardArrowDown, MdShoppingCart } from "react-icons/md";
 import { FaUser } from "react-icons/fa6";
 import { TbPlayerPlayFilled } from "react-icons/tb";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { RxCross2 } from "react-icons/rx";
+import { useState } from "react";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className=" p-7 bg-[#E5734F]">
       <div className="container flex justify-between items-center">
@@ -62,10 +66,19 @@ const Header = () => {
           </ul>
         </div>
         {/* Toggle menu */}
-        <div className="text-2xl block lg:hidden">
-          <button className="p-3 bg-gray-200 hover:bg-gray-300 duration-100 transition-all shadow-lg rounded-lg">
-            <GiHamburgerMenu></GiHamburgerMenu>
-          </button>
+        <div
+          className="text-2xl block lg:hidden "
+          onClick={() => setOpen(!open)}
+        >
+          {open ? (
+            <button className="p-3  bg-gray-200 hover:bg-gray-1000  shadow-lg rounded-lg">
+              <GiHamburgerMenu></GiHamburgerMenu>
+            </button>
+          ) : (
+            <button className="p-3 bg-gray-200 hover:bg-gray-1000 shadow-lg rounded-lg">
+              <RxCross2></RxCross2>
+            </button>
+          )}
         </div>
       </div>
     </div>
