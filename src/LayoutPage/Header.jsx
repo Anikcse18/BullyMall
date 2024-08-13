@@ -46,7 +46,7 @@ const Header = () => {
               <MdShoppingCart className="text-white text-xl"></MdShoppingCart>
             </li>
 
-            <li className="flex gap-2 items-center ">
+            <li className=" md:flex gap-2 items-center hidden">
               <FaUser className="text-xl text-[#0702AA]"></FaUser>
               <p className="text-sm text-[#EBECED]">Log In / Register</p>
             </li>
