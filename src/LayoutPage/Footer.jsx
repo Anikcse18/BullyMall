@@ -37,7 +37,7 @@ const Footer = () => {
                   placeholder="Email"
                   className="input join-item text-black mt-3"
                 />
-                <button className="btn border-none btn-primary join-item bg-[#E5734F] ml-4 text-white hover:bg-[#0702AA]">
+                <button className="btn border-none btn-primary join-item bg-[#E5734F] ml-4 mt-1 lg:mt-0 text-white hover:bg-[#0702AA]">
                   Subscribe
                 </button>
               </div>
@@ -46,7 +46,7 @@ const Footer = () => {
           {/* LowerPart */}
 
           <section className="mt-7 lg:mt-12">
-            <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 justify-between items-center text-center lg:text-left">
+            <div className="lg:relative flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:gap-x-32 items-center text-center lg:text-left">
               <div>
                 <h1 className="font-semibold">Bully Market Place</h1>
                 <ul className="space-y-3 text-sm mt-3 lg:mt-6 font-thin">
@@ -79,6 +79,11 @@ const Footer = () => {
                   <li>Find Trainer</li>
                 </ul>
               </div>
+              <img
+                src="./image20.png"
+                alt=""
+                className="hidden lg:block lg:absolute lg:-right-16"
+              />
             </div>
             <p className="text-center mt-8  text-sm">
               All Right Reserved Istiak Javed © 2024 | | 9100 Khulna Bangladesh
