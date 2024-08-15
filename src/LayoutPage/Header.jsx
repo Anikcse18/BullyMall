@@ -1,4 +1,3 @@
-import Logo from "../assets/Images/Logo.png";
 import { MdKeyboardArrowDown, MdShoppingCart } from "react-icons/md";
 import { FaUser } from "react-icons/fa6";
 import { TbPlayerPlayFilled } from "react-icons/tb";
@@ -13,7 +12,7 @@ const Header = () => {
     <div className=" p-7 bg-[#E5734F]">
       <div className="container flex justify-between items-center">
         <div className="order: 3">
-          <img src={Logo} alt="" className="w-28" />
+          <img src="/Logo.png" alt="" className="w-28" />
         </div>
 
         <div className="order-last lg:order-none">
@@ -32,30 +31,29 @@ const Header = () => {
               </button>
             )}
           </div>
-
           <ul
-            className={`font-bold  lg:flex gap-7 duration-700 delay-10000 items-center ${
+            className={`font-bold  lg:flex gap-7  delay-10000 items-center ${
               open
-                ? "flex-col absolute right-2 top-24 transition-all bg-opacity-30 rounded-lg bg-blue-400 p-4"
+                ? "flex-col absolute right-2 top-24 bg-opacity-30 z-10 rounded-lg bg-blue-400 p-4"
                 : "hidden"
             }`}
           >
-            <li className="hover:bg-gray-300 duration-700 rounded-lg px-7 py-2">
+            <li className="hover:bg-blue-300 duration-700 rounded-lg px-7 py-2">
               <a href="#">Home</a>
             </li>
-            <li className="hover:bg-gray-300 duration-700 rounded-lg px-7 lg:px-3 py-2 ">
+            <li className="hover:bg-blue-300 duration-700 rounded-lg px-7 lg:px-3 py-2 ">
               <a href="#" className="flex items-center gap-1">
                 Pets
                 <MdKeyboardArrowDown></MdKeyboardArrowDown>
               </a>
             </li>
-            <li className="hover:bg-gray-300 duration-700 rounded-lg px-7 lg:px-3 py-2">
+            <li className="hover:bg-blue-300 duration-700 rounded-lg px-7 lg:px-3 py-2">
               <a href="#" className="flex items-center gap-1">
                 Services
                 <MdKeyboardArrowDown></MdKeyboardArrowDown>
               </a>
             </li>
-            <li className="hover:bg-gray-300 duration-700 rounded-lg px-7 lg:px-3 py-2">
+            <li className="hover:bg-blue-300 duration-700 rounded-lg px-7 lg:px-3 py-2">
               <a href="#">Product</a>
             </li>
             <li className="mt-2 lg:mt-0">
@@ -65,7 +63,6 @@ const Header = () => {
             </li>
           </ul>
         </div>
-
         <div className="">
           <ul className="flex items-center gap-4">
             <li className="hidden md:block">
