@@ -31,13 +31,15 @@ const Footer = () => {
                 <img src="./Logo.png" alt="" />
               </div>
               <div>
-                <p className="text-sm ">Let's Update your self </p>
+                <p className="text-sm text-center lg:text-left">
+                  Let's Update your self
+                </p>
                 <input
                   type="text"
                   placeholder="Email"
-                  className="input join-item text-black mt-3"
+                  className="input lg:join-item text-black mt-3 ]"
                 />
-                <button className="btn border-none btn-primary join-item bg-[#E5734F] ml-4 text-white hover:bg-[#0702AA]">
+                <button className="btn border-none btn-primary lg:join-item bg-[#E5734F] ml-4 text-white hover:bg-[#0702AA]">
                   Subscribe
                 </button>
               </div>
