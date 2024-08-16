@@ -69,7 +69,7 @@ const Hero = () => {
               <FaPaw></FaPaw> Find Now
             </button>
           </div>
-          <p className="text-center mt-5 text-gray-100 roboto uppercase">
+          <p className="text-center mt-5 text-gray-100 roboto uppercase px-10 lg:py-0">
             Your marketplace for pets, services and products
           </p>
           <h1 className="custom-heading  text-center mt-4">
@@ -77,7 +77,9 @@ const Hero = () => {
               BULLY
             </span>{" "}
             <br />
-            <span className="text-white text-7xl lg:text-9xl tracking-widest	">MALL</span>
+            <span className="text-white text-7xl lg:text-9xl tracking-widest	">
+              MALL
+            </span>
           </h1>
         </div>
 
