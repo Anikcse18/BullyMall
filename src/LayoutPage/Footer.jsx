@@ -31,7 +31,7 @@ const Footer = () => {
                 <img src="./Logo.png" alt="" />
               </div>
               <div className="text-center lg:text-left">
-                <p className="text-sm ">Let's Update your self</p>
+                <p className="text-sm">Let &apos;s Update your self</p>
                 <input
                   type="text"
                   placeholder="Email"

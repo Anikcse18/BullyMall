@@ -10,3 +10,20 @@
   max-width: 1200px;
   margin: auto;
 }
+
+.inputFieldContainer {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Custom Font Loader */
+@font-face {
+  font-family: "NexaRustSlab";
+  src: url("./fonts/NexaRustSlab-Trial-Shadow.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.custom-heading {
+  font-family: "NexaRustSlab", serif;
+}
