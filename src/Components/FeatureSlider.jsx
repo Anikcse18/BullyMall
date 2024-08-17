@@ -1,6 +1,9 @@
 import React, { useRef, useState } from "react";
 import { Virtual, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FaRegEye } from "react-icons/fa";
+import { FiShoppingCart } from "react-icons/fi";
+import { GiSelfLove } from "react-icons/gi";
 import { Rate } from "antd";
 
 // Import Swiper styles
@@ -115,15 +118,31 @@ const FeatureSlider = () => {
         virtual
       >
         {dogBreeds.map((breed, index) => (
-          <SwiperSlide breed={breed} key={index} className="rounded-lg  ">
+          <SwiperSlide
+            breed={breed}
+            key={index}
+            className="rounded-lg relative group"
+          >
             <div className="flex flex-col p-2">
-              <div className="h-36 ">
+              <div className="h-36">
                 <img src={breed.image} className="" />
               </div>
-              <div className="mt-4  roboto">
+              <div className="mt-4 roboto">
                 <h1>{breed.breedName}</h1>
                 <Rate className="" allowHalf defaultValue={breed.rating} />
                 <p>${breed.price}</p>
+              </div>
+              {/* hover items */}
+              <div className="space-y-2 absolute top-[50%] left-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="bg-gray-200 hover:bg-[#0702AA] hover:text-white w-10 flex justify-center p-3 rounded-lg">
+                  <FaRegEye />
+                </div>
+                <div className="bg-gray-200 hover:bg-[#0702AA] hover:text-white w-10 flex justify-center p-3 rounded-lg">
+                  <FiShoppingCart />
+                </div>
+                <div className="bg-gray-200 hover:bg-[#0702AA] hover:text-white w-10 flex justify-center p-3 rounded-lg">
+                  <GiSelfLove />
+                </div>
               </div>
             </div>
           </SwiperSlide>
