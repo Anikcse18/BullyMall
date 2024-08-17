@@ -1,10 +1,10 @@
 import FeatureSlider from "./FeatureSlider";
-import { Button } from "antd";
+
 const Featured = () => {
   return (
     <section className=" bg-[#E5734F]">
       <div className="container mt-10">
-        <div className="flex flex-col items-center gap-y-7">
+        <div className="flex flex-col relative items-center gap-y-7">
           <h1 className="text-3xl custom-heading text-white pt-6 text-center">
             Featured Pets
           </h1>
@@ -12,6 +12,7 @@ const Featured = () => {
             Lorem ipsum dolor sit amet, est vide voluptaria ex, nec in hinc
             solum sat. Neceessitatibus sonet soluta, vim eu esse accusamus.
           </p>
+          <img src="./pet.png" alt="" className="absolute w-16 left-[32%] top-4" />
           {<FeatureSlider />}
         </div>
       </div>
