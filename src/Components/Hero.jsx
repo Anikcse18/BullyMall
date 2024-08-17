@@ -8,7 +8,7 @@ const Hero = () => {
   const [open_2, setOpen_2] = useState(false);
   const [open_3, setOpen_3] = useState(false);
   return (
-    <section>
+    <section className="">
       <div className="relative bg-gradient-to-b from-[#FF9153] to-[#E5734F] h-[660px]">
         {/* Input Field */}
         <div className="inputFieldContainer">
@@ -22,7 +22,11 @@ const Hero = () => {
               />
               <div
                 className="absolute inset-y-0 cursor-auto right-2  flex items-center p-3 pointer-events-auto"
-                onClick={() => setOpen_1(!open_1)}
+                onClick={() => {
+                  setOpen_1(!open_1);
+                  setOpen_2(false);
+                  setOpen_3(false);
+                }}
               >
                 <IoIosArrowDown />
               </div>
@@ -39,7 +43,11 @@ const Hero = () => {
               />
               <div
                 className="absolute inset-y-0 cursor-auto right-2  flex items-center p-3 pointer-events-auto"
-                onClick={() => setOpen_2(!open_2)}
+                onClick={() => {
+                  setOpen_2(!open_2);
+                  setOpen_1(false);
+                  setOpen_3(false);
+                }}
               >
                 <IoIosArrowDown />
               </div>
@@ -56,7 +64,11 @@ const Hero = () => {
               />
               <div
                 className="absolute inset-y-0 cursor-auto right-2  flex items-center p-3 pointer-events-auto"
-                onClick={() => setOpen_3(!open_3)}
+                onClick={() => {
+                  setOpen_3(!open_3);
+                  setOpen_2(false);
+                  setOpen_1(false);
+                }}
               >
                 <IoIosArrowDown />
               </div>
@@ -83,9 +95,6 @@ const Hero = () => {
           </h1>
         </div>
 
-        {/* Hero Text */}
-        {/* <h1 className="custom-heading text-white text-8xl">Istiak javed</h1> */}
-
         <img
           src="./kutto_hero.png"
           alt=""
@@ -94,6 +103,28 @@ const Hero = () => {
         <div className="absolute bottom-0">
           <img src="./BG.png" alt="" className="w-full" />
         </div>
+
+        <img
+          src="./Hero_objects.png"
+          alt=""
+          className=" top-14 left-10 hidden  lg:block absolute
+        "
+        />
+        <img
+          src="./Hero_bottom.png"
+          alt=""
+          className="hidden lg:block absolute bottom-10 left-20  w-[90px] "
+        />
+        <img
+          src="./Hero_Obj_right.png"
+          alt=""
+          className="hidden lg:block absolute top-36 right-10 w-[50px]"
+        />
+        <img
+          src="./Hero_bottom_m.png"
+          alt=""
+          className="hidden lg:block absolute bottom-14 right-[44%] w-[100px]"
+        />
       </div>
     </section>
   );

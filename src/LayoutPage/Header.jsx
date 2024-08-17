@@ -9,7 +9,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className=" p-7 bg-[#E5734F]">
+    <div className=" p-7 bg-[#E5734F] sticky top-0 z-30">
       <div className="container flex justify-between items-center">
         <div className="order: 3">
           <img src="/Logo.png" alt="" className="w-28" />

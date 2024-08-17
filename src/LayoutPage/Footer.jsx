@@ -4,8 +4,8 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <div className="relative w-full h-full roboto">
-      <img src="/footerImage.png" className="absolute w-full h-full" alt="" />
+    <div className="relative w-full  roboto">
+      <img src="/footerImage.png" className="absolute w-full h-full" />
       <div className="relative text-white py-10 lg:py-14 bg-[#545B61]/80">
         <footer className="container">
           {/* UpperPart */}
@@ -85,7 +85,7 @@ const Footer = () => {
                 className="hidden lg:block lg:absolute lg:-right-16"
               />
             </div>
-            <p className="text-center mt-8  text-sm">
+            <p className="text-center mt-8  text-sm px-5">
               All Right Reserved Istiak Javed © 2024 | | 9100 Khulna Bangladesh
             </p>
           </section>
