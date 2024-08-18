@@ -33,10 +33,15 @@ const FeaturedServices = () => {
     <div className="bg-[#FF9153] p-3">
       {/* Services Section */}
       <section className="container mt-24 ">
-        <div className="flex flex-col lg:flex-row lg:gap-14 items-center">
+        <div className="flex flex-col lg:flex-row gap-14 items-center">
           <div className="">
-            <div>
-              <h1 className="text-3xl custom-heading text-white pt-6 ">
+            <div className="flex flex-col space-y-10">
+              <h1 className="text-3xl custom-heading text-white pt-6 lg:flex lg:items-center ">
+                <img
+                  src="./pet.png"
+                  alt=""
+                  className="hidden lg:block w-16 "
+                ></img>
                 Featured Services
               </h1>
               <p className="text-gray-100 roboto uppercase">

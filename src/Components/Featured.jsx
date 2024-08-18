@@ -15,7 +15,7 @@ const Featured = () => {
           <img
             src="./pet.png"
             alt=""
-            className="absolute w-16 left-[32%] top-4 "
+            className="hidden lg:block lg:absolute w-16 left-[32%] top-4 "
           />
           {<FeatureSlider />}
         </div>

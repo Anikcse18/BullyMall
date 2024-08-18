@@ -123,11 +123,11 @@ const FeatureSlider = () => {
             key={index}
             className="rounded-lg relative group"
           >
-            <div className="flex flex-col p-2">
+            <div className="flex flex-col  p-2">
               <div className="h-36">
                 <img src={breed.image} className="" />
               </div>
-              <div className="mt-4 roboto">
+              <div className="mt-4 roboto flex flex-col py-4">
                 <h1>{breed.breedName}</h1>
                 <Rate className="" allowHalf defaultValue={breed.rating} />
                 <p>${breed.price}</p>
