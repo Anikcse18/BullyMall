@@ -4,6 +4,7 @@ import Header from "./LayoutPage/Header";
 import Featured from "./Components/Featured";
 import FeatureSlider from "./Components/FeatureSlider";
 import Hero from "./Components/Hero";
+import FeaturedServices from "./Components/FeaturedServices";
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
       <Header />
       <Hero />
       <Featured />
+      <FeaturedServices />
       <Footer />
-
     </>
   );
 }

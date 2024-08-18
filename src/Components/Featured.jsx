@@ -12,7 +12,11 @@ const Featured = () => {
             Lorem ipsum dolor sit amet, est vide voluptaria ex, nec in hinc
             solum sat. Neceessitatibus sonet soluta, vim eu esse accusamus.
           </p>
-          <img src="./pet.png" alt="" className="absolute w-16 left-[32%] top-4" />
+          <img
+            src="./pet.png"
+            alt=""
+            className="absolute w-16 left-[32%] top-4 "
+          />
           {<FeatureSlider />}
         </div>
       </div>

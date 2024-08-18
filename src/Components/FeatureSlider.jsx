@@ -134,7 +134,7 @@ const FeatureSlider = () => {
               </div>
               {/* hover items */}
               <div className="space-y-2 absolute top-[50%] left-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="bg-gray-200 hover:bg-[#0702AA] hover:text-white w-10 flex justify-center p-3 rounded-lg">
+                <div className="bg-gray-200 hover:bg-[#0702AA] hover:text-white  w-10 flex justify-center p-3 rounded-lg">
                   <FaRegEye />
                 </div>
                 <div className="bg-gray-200 hover:bg-[#0702AA] hover:text-white w-10 flex justify-center p-3 rounded-lg">
