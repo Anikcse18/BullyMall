@@ -16,8 +16,19 @@ const ProductServices = () => {
         </div>
 
         {/* Slider */}
-        <div className="pb-2">
+        <div className="pb-2 relative">
           <ServicesSlider />
+          <img
+            src="./pet.png"
+            alt=""
+            className="hidden lg:block lg:absolute top-[30%] left-32 w-12"
+          />
+
+          <img
+            src="./pet.png"
+            alt=""
+            className="hidden lg:block lg:absolute top-[30%] right-32 w-12"
+          />
         </div>
 
         <div className="flex flex-col text-white mt-4 lg:flex-row justify-around items-center gap-7">
