@@ -7,6 +7,7 @@ import Hero from "./Components/Hero";
 import FeaturedServices from "./Components/FeaturedServices";
 import ProductServices from "./Components/ProductServices";
 import ServicesSlider from "./Components/Slider/ServicesSlider";
+import LookingFor from "./Components/LookingFor";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Featured />
       <FeaturedServices />
       <ProductServices />
+      <LookingFor />
       <Footer />
     </>
   );
