@@ -1,0 +1,32 @@
+.service .swiper {
+  width: 70%;
+  /* padding-top: 50px; */
+  margin-top: 20px;
+  padding-bottom: 70px;
+}
+
+.service .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.service .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white; /* Background color */
+  color: black; /* Icon color */
+  border-radius: 100%; /*Makes the buttons round*/
+  padding: 20px; /* Adjust padding to make the buttons bigger */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Optional: Adjust the size of the navigation buttons */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px; /* Adjust the icon size */
+}

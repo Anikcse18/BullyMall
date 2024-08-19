@@ -1,4 +1,4 @@
-import FeatureSlider from "./FeatureSlider";
+import FeatureSlider from "./Slider/FeatureSlider";
 
 const Featured = () => {
   return (
@@ -17,7 +17,7 @@ const Featured = () => {
             alt=""
             className="hidden lg:block lg:absolute w-16 left-[32%] top-4 "
           />
-          {<FeatureSlider />}
+          <FeatureSlider />
         </div>
       </div>
     </section>

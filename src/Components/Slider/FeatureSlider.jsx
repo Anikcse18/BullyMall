@@ -10,8 +10,8 @@ import { Rate } from "antd";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./style.css";
-import ProductCard from "./Product/ProductCard";
+import "./FeatureSlider.css";
+// import ProductCard from "./Product/ProductCard";
 
 const FeatureSlider = () => {
   const [swiperRef, setSwiperRef] = useState(null);
@@ -31,14 +31,6 @@ const FeatureSlider = () => {
     prependNumber.current = prependNumber.current - 2;
     swiperRef.slideTo(swiperRef.activeIndex + 2, 0);
   };
-
-  // const append = () => {
-  //   setSlides([...slides, "Slide " + ++appendNumber.current]);
-  // };
-
-  // const slideTo = (index) => {
-  //   swiperRef.slideTo(index - 1, 0);
-  // };
 
   const dogBreeds = [
     {

@@ -1,4 +1,4 @@
-import React from "react";
+
 import Services from "./Product/Services";
 
 const FeaturedServices = () => {
