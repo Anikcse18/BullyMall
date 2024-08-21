@@ -6,8 +6,11 @@ import Featured from "./Components/Featured";
 import Hero from "./Components/Hero";
 import FeaturedServices from "./Components/FeaturedServices";
 import ProductServices from "./Components/ProductServices";
-import ServicesSlider from "./Components/Slider/ServicesSlider";
+// import ServicesSlider from "./Components/Slider/ServicesSlider";
 import LookingFor from "./Components/LookingFor";
+import ListingWithUs from "./Components/ListingWithUs";
+import Listing from "./Components/Listing";
+import ShopPeat from "./Components/ShopPeat";
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
       <FeaturedServices />
       <ProductServices />
       <LookingFor />
+      <ListingWithUs />
+      <Listing />
+      <ShopPeat />
       <Footer />
     </>
   );

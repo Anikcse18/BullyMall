@@ -2,7 +2,7 @@ import ServicesSlider from "./Slider/ServicesSlider";
 
 const ProductServices = () => {
   return (
-    <section className=" bg-[#E5734F] p-8">
+    <section className=" bg-[#E5734F] p-5">
       <div className="container">
         <div className="flex flex-col  items-center gap-y-7">
           <h1 className="text-3xl lg:w-[35%] flex flex-row items-start custom-heading text-white pt-6 text-center">
