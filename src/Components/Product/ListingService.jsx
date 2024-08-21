@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 const ListingService = ({ service }) => {
-  const { type, description, value } = service;
+  const { type, description } = service;
   return (
     <div className="text-white flex flex-col items-center space-y-4 ">
       <h1 className="custom-heading text-xl w-[40%] text-center"> {type} </h1>

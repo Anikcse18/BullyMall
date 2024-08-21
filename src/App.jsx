@@ -8,9 +8,10 @@ import FeaturedServices from "./Components/FeaturedServices";
 import ProductServices from "./Components/ProductServices";
 // import ServicesSlider from "./Components/Slider/ServicesSlider";
 import LookingFor from "./Components/LookingFor";
-import ListingWithUs from "./Components/ListingWithUs";
+
 import Listing from "./Components/Listing";
 import ShopPeat from "./Components/ShopPeat";
+import PerfectServices from "./Components/PerfectServices";
 
 function App() {
   return (
@@ -21,9 +22,10 @@ function App() {
       <FeaturedServices />
       <ProductServices />
       <LookingFor />
-      <ListingWithUs />
+
       <Listing />
       <ShopPeat />
+      <PerfectServices />
       <Footer />
     </>
   );
