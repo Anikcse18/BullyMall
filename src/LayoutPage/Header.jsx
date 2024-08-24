@@ -1,6 +1,6 @@
 import { MdKeyboardArrowDown, MdShoppingCart } from "react-icons/md";
 import { FaUser } from "react-icons/fa6";
-import { TbPlayerPlayFilled } from "react-icons/tb";
+import { TiMediaPlay } from "react-icons/ti";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { useState } from "react";
@@ -77,7 +77,7 @@ const Header = () => {
             <li className="hidden lg:block">
               <button className="btn  bg-[#0702AA] border-none hover:text-black hover:bg-gray-200  text-white ">
                 <div className="bg-[#E5734F] p-[2px] rounded-xl">
-                  <TbPlayerPlayFilled></TbPlayerPlayFilled>
+                  <TiMediaPlay></TiMediaPlay>
                 </div>
                 How it Works
               </button>

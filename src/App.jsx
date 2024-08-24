@@ -12,6 +12,7 @@ import LookingFor from "./Components/LookingFor";
 import Listing from "./Components/Listing";
 import ShopPeat from "./Components/ShopPeat";
 import PerfectServices from "./Components/PerfectServices";
+import HealthWellness from "./Components/HealthWellness";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Listing />
       <ShopPeat />
       <PerfectServices />
+      <HealthWellness />
       <Footer />
     </>
   );

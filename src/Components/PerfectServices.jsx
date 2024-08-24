@@ -42,7 +42,7 @@ const PerfectServices = () => {
                     our puppy would be a good match.
                   </p>
                   <p className="text-sm">. ........ Istiak</p>
-                  <div className="w-[50px] lg:w-[80px] h-full mt-5">
+                  <div className="w-[48px] lg:w-[68px] h-full mt-3">
                     <img src="./perfect_Icon.png" className="w-[90%]" alt="" />
                   </div>
                 </div>
